@@ -1,0 +1,1278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --font-color: #ffffff;
+  --mainfont-color: #00ffff;
+  --mainbackground: #040120;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-decoration-color: transparent;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection {
+  background-color: black;
+  color: cyan;
+}
+body {
+  overflow-x: hidden;
+}
+.main {
+  width: 100%;
+  background-color: #040120;
+}
+
+.homepage {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  animation: fadeInDown 0.5s ease forwards;
+}
+
+.nav-links.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+  z-index: 100;
+}
+
+.nav-links li {
+  margin: 15px 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bar {
+  width: 7vw;
+  height: 0.6vh;
+  background-color: white;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+.bar:nth-child(1) {
+  width: 5vw;
+  height: 0.6vh;
+  background-color: #00ffff;
+}
+.bar:nth-child(3) {
+  width: 5vw;
+  background-color: #00ffff;
+  height: 0.6vh;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: cyan;
+  font-size: 5vw;
+  margin-right: 20px;
+  font-style: Poppins;
+  font-weight: 900;
+  transition: all 1s ease-in;
+  position: absolute;
+}
+.logo:hover {
+  font-size: 5.5vw;
+
+  color: rgb(22, 212, 212);
+  position: absolute;
+}
+.navbarlinks {
+  background-color: #040120;
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+}
+.nav-links li {
+  font-size: 4.6vw;
+  color: cyan;
+  list-style-type: none;
+}
+.nav-links li :active {
+  color: rgb(91, 255, 255);
+  border-bottom: 10px solid cyan;
+  transition: all 0.3s ease-in;
+}
+.textpart {
+  width: 100%;
+  height: fit-content;
+  background-color: transparent;
+  color: var(--font-color);
+  text-align: center;
+}
+.textpart h1 {
+  font-size: 23px;
+}
+.textpart h1:nth-child(1) {
+  margin-top: 5vh;
+}
+#mydiscription {
+  width: 76%;
+  text-align: center;
+  margin-left: 12vw;
+  letter-spacing: -0.5px;
+  line-height: 19px;
+  margin-top: 2.5vh;
+  font-size: 16px;
+}
+#name {
+  color: cyan;
+}
+
+#frontendtext {
+  font-size: 25px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: cyan;
+  background: linear-gradient(to right, cyan 50%, transparent 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: all 1s ease-in-out;
+}
+#frontendtext:hover {
+  color: cyan;
+  background-position: 0%;
+}
+.socialicon {
+  display: flex;
+  margin-top: 5vh;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+}
+
+#instaicon {
+  height: 50px;
+  width: 50px;
+  color: #00ffff;
+  font-size: 10vw;
+  border-radius: 50%;
+  border: 1px solid cyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#facebookicon {
+  height: 50px;
+  width: 50px;
+  color: #00ffff;
+  font-size: 10vw;
+  border-radius: 50%;
+  border: 1px solid cyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#whatsappicon {
+  height: 50px;
+  width: 50px;
+  color: #00ffff;
+  font-size: 10vw;
+  border-radius: 50%;
+  border: 1px solid cyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#instaicon:hover {
+  color: cyan;
+  background-color: white;
+  transform: scale(1.22);
+  transition: all ease-in-out 0.3s;
+  border: 3px solid cyan;
+}
+#whatsappicon:hover {
+  color: cyan;
+  background-color: white;
+  transform: scale(1.22);
+  transition: all ease-in-out 0.3s;
+  border: 3px solid cyan;
+}
+#facebookicon:hover {
+  color: cyan;
+  background-color: white;
+  transform: scale(1.22);
+  transition: all ease-in-out 0.3s;
+  border: 3px solid cyan;
+}
+.github-button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: cyan solid 0.15em;
+  border-radius: 0.25em;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+  padding: 5px 8px;
+}
+.github-button p {
+  z-index: 1;
+  background-color: transparent;
+}
+
+.github-button:hover {
+  color: black;
+}
+
+.github-button:active {
+  border-color: rgb(30, 218, 218);
+}
+
+.github-button::after,
+.github-button::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: mediumspringgreen;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.github-button::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.github-button::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.github-button:hover:before {
+  transform: translateX(-1em);
+}
+
+.github-button:hover:after {
+  transform: translateX(1em);
+}
+.github-button:active:before,
+.github-button:active:after {
+  background: cyan;
+}
+.githubbutton {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+.githubbutton i {
+  font-size: 23px;
+  margin-right: 3vw;
+}
+.aboutme {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.symbol {
+  font-size: 37vw;
+  margin-top: -28vh;
+  color: cyan;
+  display: flex;
+  padding: 0px 135px;
+}
+
+.rounded {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about img,
+.about h1,
+.about .info {
+  transition: opacity 1s;
+}
+
+.quote-top,
+.quote-bottom {
+  font-size: 24px;
+  color: cyan;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.quote-top.left {
+  top: 0;
+  left: 10px;
+}
+
+.quote-bottom.right {
+  bottom: 0;
+  right: 10px;
+}
+
+.rounded {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.aboutmeimage {
+  display: flex;
+  justify-content: center;
+}
+
+.nameaboutme {
+  color: cyan;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  font-size: 4vw;
+}
+
+.nameaboutme h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.nameaboutme span {
+  color: cyan;
+}
+
+.aboutmeimage {
+  display: flex;
+  justify-content: center;
+}
+.about img,
+.about h1,
+.about .info {
+  transition: opacity 1s;
+}
+.spinner {
+  width: 100px;
+  height: 100px;
+  animation: spinning82341 5s linear infinite;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0px -5px 20px 0px rgb(186, 66, 255),
+    0px 5px 20px 0px rgb(0, 225, 255);
+}
+
+.spinner1 {
+  background-color: rgb(36, 36, 36);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  /* filter: blur(10px); */
+}
+.imageaboutme {
+  display: flex;
+  justify-content: center;
+}
+.imageaboutme img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.imageaboutmee {
+  height: 31vw;
+  overflow: hidden;
+  width: 31vw;
+}
+.whoiam {
+  text-align: center;
+  color: white;
+  font-size: 5vw;
+  font-family: "Poppins";
+  margin-top: 2vh;
+}
+
+.whoiam span {
+  color: cyan;
+}
+.whoiam p {
+  font-size: 16px;
+  margin-top: 2vh;
+  padding: 0 14vw;
+  font-family: "Poppins";
+}
+
+.letsconnect {
+  text-align: center;
+  color: white;
+  font-family: "Poppins";
+  margin-top: 3vh;
+}
+.letsconnect span {
+  color: cyan;
+}
+.letsconnect p {
+  font-size: 16px;
+  margin-top: 2vh;
+  padding: 0 14vw;
+  font-family: "Poppins";
+}
+.letsconnect a {
+  color: cyan;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 0.9vw;
+}
+
+.myskill {
+  width: 100%;
+  min-height: 100vh;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins";
+}
+.skills,
+.skills .skill,
+.skills .skill .skill-title,
+.skills .skill .skill-bar {
+  width: 100%;
+}
+
+.skills {
+  padding: 15px;
+  background-color: #040120;
+}
+
+.skills .skill {
+  margin-bottom: 30px;
+  border: 2px solid cyan;
+  border-radius: 10px;
+  padding: 11px 10px;
+  box-shadow: 3px 3px 9px rgba(255, 255, 255, 0.541);
+}
+
+.skills .skill .skill-title {
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+
+.skills .skill .skill-bar {
+  width: 0;
+  height: 13px;
+  border-radius: 15px;
+  background: rgb(212, 211, 211);
+  transition: 1s cubic-bezier(1, 0, 0.5, 1);
+  -webkit-transition: 1s cubic-bezier(1, 0, 0.5, 1);
+  -ms-transition: 1s cubic-bezier(1, 0, 0.5, 1);
+}
+
+.skills.active .skill .skill-bar {
+  width: 100%;
+}
+
+.skills .skill .skill-bar span {
+  float: left;
+  width: 0%;
+  background: cyan;
+  height: 13px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  position: relative;
+  transition: 1s cubic-bezier(1, 0, 0.5, 1);
+  -webkit-transition: 1s cubic-bezier(1, 0, 0.5, 1);
+  -ms-transition: 1s cubic-bezier(1, 0, 0.5, 1);
+}
+
+.skills .skill .skill-bar span b {
+  float: left;
+  width: 100%;
+  position: relative;
+  text-align: right;
+  opacity: 0;
+  font-size: 15px;
+  color: cyan;
+  font-weight: 400;
+  top: -28px;
+}
+.headingskill {
+  text-transform: none;
+}
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.skills .skill .skill-bar {
+  width: 0;
+  height: 24px;
+  padding: 3px;
+  background-color: cyan;
+  border-radius: 15px;
+  transition: 1s cubic-bezier(1, 0, 0.5, 1);
+  -webkit-transition: 1s cubic-bezier(1, 0, 0.5, 1);
+  -ms-transition: 1s cubic-bezier(1, 0, 0.5, 1);
+  margin-top: 1.5px;
+}
+.skillbarfull {
+  width: 100%;
+  height: 30px;
+  border: 2px solid cyan;
+  background-color: transparent;
+
+  border-radius: 15px;
+  transition: 1s cubic-bezier(1, 0, 0.5, 1);
+  -webkit-transition: 1s cubic-bezier(1, 0, 0.5, 1);
+  -ms-transition: 1s cubic-bezier(1, 0, 0.5, 1);
+  position: relative;
+}
+
+.skills .skill .skill-bar:hover {
+  width: 0;
+  height: 24px;
+  padding: 3px;
+  background-color: rgb(180, 255, 255);
+  border-radius: 15px;
+  transition: 1s cubic-bezier(1, 0, 0.5, 1);
+  -webkit-transition: 1s cubic-bezier(1, 0, 0.5, 1);
+  -ms-transition: 1s cubic-bezier(1, 0, 0.5, 1);
+  margin-top: 1.5px;
+}
+.percentagebar {
+  position: absolute;
+  right: 7px;
+  color: cyan;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 15px;
+  top: 1px;
+  transition: all 1s ease-in;
+}
+.percentagebar:hover {
+  position: absolute;
+  right: 6px;
+  color: rgb(204, 240, 240);
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  top: 1px;
+}
+.headingskill {
+  text-align: center;
+  font-family: "Poppins";
+  color: #00ffff;
+  font-weight: 600;
+  font-size: 6vw;
+}
+.container:nth-child(2) {
+  margin-top: 5vh;
+}
+.headingskill:nth-child(2) {
+  margin-top: 3vh;
+}
+.headingskill:nth-child(1) {
+  margin-top: 5vh;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading-section {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-wrap {
+  background-color: #040120;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.getintouchs {
+  color: white;
+  font-size: 5vw;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2.5px solid cyan;
+  border-radius: 5px;
+  background-color: #040120;
+  font-size: 18px;
+  color: #fff;
+  box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.336);
+}
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+  font-size: 18px;
+}
+input[type="submit"] {
+  background-color: #040120;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.info-wrap {
+  background-color: #007bff;
+  padding: 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  display: none;
+}
+
+.dbox {
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.education-item:hover {
+  box-shadow: 5px 5px 10px cyan;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.education {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.education h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: cyan;
+}
+
+.education-item {
+  background-color: #040120;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 12px rgba(255, 255, 255, 0.452);
+  transition: box-shadow 0.3s;
+  border: 2px solid cyan;
+}
+
+.education-item:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-item i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: cyan;
+}
+
+.education-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.education-item p {
+  font-size: 16px;
+  color: #dadada;
+}
+.animate__hidden {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 35px;
+}
+.footer a {
+  padding: 5px;
+}
+.footer a:hover {
+  color: cyan;
+}
+.footer p {
+  margin-bottom: 0;
+  color: white;
+}
+.footer .heart {
+  color: rgb(255, 255, 255);
+}
+.footerpage {
+  width: 100%;
+  min-height: 20vh;
+}
+.footer {
+  text-align: center;
+}
+.imagepart {
+  display: none;
+}
+.navmain {
+  display: none;
+}
+.nav-links.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+  z-index: 100;
+  background-color: #040120;
+  height: 34vh;
+  margin-top: 6vh;
+}
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+@media only screen and (min-width: 550px) and (max-width: 768px) {
+  .main {
+    width: 100%;
+    overflow: hidden;
+  }
+  .homepagedata {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 6%;
+  }
+  .imagepart {
+    display: block;
+    width: 42%;
+    height: auto;
+    padding: 0px 20px;
+    margin-left: 5vw;
+  }
+  .textpart {
+    width: 42%;
+    height: auto;
+    text-align: left;
+    margin-top: 3vh;
+  }
+  .textpart h1 {
+    margin-left: 5vw;
+    width: 100%;
+  }
+  .textpart h1:nth-child(2) {
+    font-size: 12px;
+  }
+  #mydiscription {
+    margin-left: 5vw;
+    text-align: left;
+    width: 89%;
+  }
+  .logo {
+    font-size: 3.8vw;
+  }
+
+  .logo:hover {
+    font-size: 4.5vw;
+  }
+  #whatsappicon {
+    color: #00ffff;
+    font-size: 7vw;
+    border-radius: 50%;
+    border: 1px solid cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 2px;
+  }
+  #instaicon {
+    color: #00ffff;
+    font-size: 7vw;
+    border-radius: 50%;
+    border: 1px solid cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 2px;
+  }
+  #facebookicon {
+    color: #00ffff;
+    font-size: 7vw;
+    border-radius: 50%;
+    border: 1px solid cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 4px;
+  }
+  .github-button {
+    padding: 8px 5px;
+    border-radius: 16px;
+  }
+  .githubbutton i {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  .imagepart img {
+    height: 60vh;
+    width: 40vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(6px 7px 17px rgb(255, 255, 255));
+    transition: all 1s ease-in-out, color 1s ease-in-out;
+  }
+  .spinner {
+    width: 150px;
+    height: 150px;
+    animation: spinning82341 5s linear infinite;
+    text-align: center;
+    border-radius: 75px;
+    box-shadow: 0px -5px 20px 0px rgb(186, 66, 255),
+      0px 5px 20px 0px rgb(0, 225, 255);
+  }
+  .spinner1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+  }
+  .imageaboutme {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+  }
+
+  .imageaboutme img {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+  }
+  .nameaboutme h1 {
+    font-size: 7vw;
+  }
+  .whoiam h2 {
+    font-size: 5vw;
+  }
+
+  .education-item:hover {
+    box-shadow: 10px 10px 10px cyan;
+  }
+}
+@media (min-width: 600px) {
+  .main {
+    width: 100%;
+    overflow: hidden;
+  }
+  .skills {
+    padding: 15px 5px;
+    background-color: #040120;
+    columns: 2;
+  }
+
+  .education-item:hover {
+    box-shadow: 5px 5px 10px cyan;
+  }
+  .container:nth-child(2) {
+    margin-top: 0px;
+  }
+  .headingskill {
+    text-align: center;
+    font-family: "Poppins";
+    color: #00ffff;
+    font-weight: 600;
+    font-size: 4vw;
+    text-transform: capitalize;
+  }
+}
+@media (min-width: 769px) {
+  .main {
+    width: 100%;
+    overflow: hidden;
+  }
+  .skills {
+    padding: 15px 5px;
+    background-color: #040120;
+  }
+  .navbar {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+  .navmain {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .navfunction {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-evenly;
+  }
+  .navfunction ul {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-evenly;
+    gap: 28px;
+    margin-top: 2vh;
+    font-size: 1.4em;
+    list-style-type: none;
+
+    font-family: "Poppins";
+    font-weight: 600;
+    transition: all 1s ease;
+    margin-right: 2vw;
+  }
+  .navfunction ul a:hover {
+    color: cyan;
+  }
+  .navfunction ul li:active {
+    color: cyan;
+    border-bottom: 5px solid cyan;
+  }
+  .navlogo {
+    color: cyan;
+    padding: 6px;
+  }
+  .homepagedata {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .imagepart {
+    display: block;
+    width: 51%;
+    height: 70vh;
+    padding: 3px 23px;
+  }
+  .textpart {
+    width: 50%;
+    height: auto;
+    text-align: left;
+    margin-top: 3vh;
+  }
+  #mydiscription {
+    width: 78%;
+    text-align: left;
+    margin-left: 3vw;
+    letter-spacing: -0.5px;
+    line-height: 25px;
+    margin-top: 2.5vh;
+    font-size: 20px;
+  }
+  .textpart h1 {
+    margin-left: 3vw;
+    font-size: 3.5vw;
+  }
+  #frontendtext {
+    margin-left: 3vw;
+    font-size: 3vw;
+  }
+  .imagepart img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(6px 7px 17px rgb(255, 255, 255));
+    transition: all 1s ease-in-out, color 1s ease-in-out;
+  }
+  .imagepart img:hover {
+    filter: drop-shadow(6px 7px 17px cyan);
+    transition: all 1s ease-in-out, color 1s ease-in-out;
+    translate: 5px 5px;
+  }
+  .education-item:hover {
+    box-shadow: 5px 5px 10px cyan;
+  }
+  .socialicon {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.5vw;
+    margin-top: -12vh;
+  }
+  #whatsappicon {
+    font-size: 4vw;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+  #facebookicon {
+    font-size: 6vw;
+    font-size: 4vw;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+  #instaicon {
+    font-size: 6vw;
+    font-size: 4vw;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 3vw;
+  }
+  .githubbutton {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .github-button {
+    margin-left: 3vw;
+    border: 3px solid rgb(0, 255, 115);
+    border-radius: 25px;
+    padding: 10px 0px;
+    font-size: 22px;
+  }
+  .github-button i {
+    font-size: 32px;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  .github-button p {
+    margin-right: 1vw;
+  }
+  .github-button:hover {
+    font-weight: 500;
+    font-family: "Poppins";
+  }
+  .spinner {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  .spinner1 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  .imageaboutme {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  .imageaboutme img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  .svgg {
+    opacity: 1;
+  }
+  .nameaboutme h1 {
+    font-size: 70px;
+    margin-top: 3vh;
+  }
+  .whoiam p {
+    width: 100%;
+    font-size: 20px;
+    padding: 0px 200px;
+  }
+  .whoiam h2 {
+    font-size: 40px;
+  }
+  .letsconnect p {
+    width: 100%;
+    font-size: 20px;
+    padding: 0px 250px;
+  }
+  .letsconnect h2 {
+    font-size: 40px;
+  }
+  .skills {
+    padding: 15px 5px;
+    background-color: rgb(4, 1, 32);
+    columns: 1;
+    padding: 15px 5px;
+    background-color: rgb(4, 1, 32);
+    columns: 1;
+    width: 60%;
+    align-self: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .education {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .education-item {
+    align-self: center;
+    width: 60%;
+  }
+  .slill {
+    height: 88px;
+  }
+  .ftco-section {
+    align-self: center;
+    width: 65%;
+    margin-left: 20vw;
+  }
+  .conatctpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-wrap {
+    width: 65%;
+    align-self: center;
+  }
+  .education h1 {
+    font-size: 50px;
+  }
+  .getintouchs {
+    color: cyan;
+    font-size: 50px;
+  }
+  .footerpage {
+    background-color: #03011a;
+  }
+  .footer p {
+    font-size: 22px;
+    font-family: "Poppins";
+  }
+  .footer {
+    padding: 15px;
+  }
+  .footer a {
+    font-size: 50px;
+  }
+
+  input[type="text"] {
+    font-size: 18px;
+  }
+}
+
+@keyframes spinning82341 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-from-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-from-top {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    box-shadow: 0 0 10px 2px rgba(255, 0, 0, 0.5),
+      0 0 10px 2px rgba(255, 165, 0, 0.5), 0 0 10px 2px rgba(255, 255, 0, 0.5),
+      0 0 10px 2px rgba(0, 128, 0, 0.5), 0 0 10px 2px rgba(0, 0, 255, 0.5),
+      0 0 10px 2px rgba(128, 0, 128, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px 2px rgba(255, 0, 0, 0.5),
+      0 0 10px 2px rgba(255, 165, 0, 0.5), 0 0 10px 2px rgba(255, 255, 0, 0.5),
+      0 0 10px 2px rgba(0, 128, 0, 0.5), 0 0 10px 2px rgba(0, 0, 255, 0.5),
+      0 0 10px 2px rgba(128, 0, 128, 0.5);
+  }
+}
+
+@keyframes textAnimation {
+  0% {
+    color: aqua;
+    background-position: 0%;
+    transition: all 0.5s ease-in;
+  }
+  100% {
+    color: transparent;
+    background-position: 100%;
+    transition: all 0.5s ease-in;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

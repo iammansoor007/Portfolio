@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="homepage">
+        <div class="navbar">
+          <div class="logo-container">
+            <div class="logo">Mansoor</div>
+          </div>
+          <div class="hamburgerconatiner">
+            <div class="menu-toggle" id="menuToggle">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="navmain">
+          <div class="navlogo">
+            <h1>Mansoor.</h1>
+          </div>
+          <div class="navfunction">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#aboutme">About me</a></li>
+              <li><a href="#whyme">Why Me?</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbarlinks">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#whyme">Why Me?</a></li>
+          </ul>
+        </div>
+        <div class="homepagedata">
+          <div class="textpart">
+            <div class="myname">
+              <h1>Hi! I'm <span id="name">Mansoor</span></h1>
+            </div>
+            <h1 id="frontendtext">A Frontend Developer |</h1>
+            <p id="mydiscription">
+              I'm a dedicated Frontend Web Developer with a passion for creating
+              dynamic, user-friendly websites. With a strong skill<br />
+              set in HTML, CSS, Tailwind CSS, JavaScript , I strive to bring
+              designs<br />
+            </p>
+          </div>
+          <div class="imagepart">
+            <img
+              class="imageimage"
+              src="2211.w026.n002.2759B.p1.2759-removebg.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="socialicon">
+          <a href="https://www.instagram.com/wassup_mansoor/" target="_blank">
+            <i id="instaicon" class="bx bxl-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/iammansoor007/" target="_blank">
+            <i id="facebookicon" class="bx bxl-facebook"></i>
+          </a>
+          <a href="https://wa.me/03152280754" target="_blank">
+            <i id="whatsappicon" class="bx bxl-whatsapp"></i>
+          </a>
+        </div>
+        <div class="githubbutton">
+          <a href="https://github.com/iammansoor007" class="github-button">
+            <i class="fab fa-github github-icon"></i>
+            <p>Github Account</p>
+          </a>
+        </div>
+      </div>
+      <div class="svg1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#00FFFF"
+            fill-opacity="0.69"
+            class="svggg"
+            d="M0,128L21.8,128C43.6,128,87,128,131,112C174.5,96,218,64,262,85.3C305.5,107,349,181,393,197.3C436.4,213,480,171,524,138.7C567.3,107,611,85,655,80C698.2,75,742,85,785,74.7C829.1,64,873,32,916,32C960,32,1004,64,1047,85.3C1090.9,107,1135,117,1178,154.7C1221.8,192,1265,256,1309,288C1352.7,320,1396,320,1418,320L1440,320L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+      <div id="aboutme">
+        <div class="about">
+          <div class="aboutmeimage">
+            <div class="spinner">
+              <div class="spinner1">
+                <div class="imageaboutme">
+                  <img
+                    src="Code_typing-bro-removebg-preview.png"
+                    alt="Your Image"
+                    class="from-left rounded imageaboutmee"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nameaboutme">
+            <h1 class="from-top">About <span> Me </span></h1>
+          </div>
+
+          <div class="info from-right">
+            <div class="whoiam">
+              <h2>Who <span>I</span> Am</h2>
+              <p>
+                I specialize in creating interactive, responsive, and
+                user-friendly websites using the latest web technologies. I have
+                a knack for problem-solving and a keen eye for design, which I
+                believe makes me a well-rounded developer.
+              </p>
+            </div>
+            <div class="letsconnect">
+              <h2>Lets <span>Connect</span></h2>
+              <p>
+                I'm always open to new opportunities and challenges. If you'd
+                like to work with me or just say hi, feel free to
+                <a href="https://wa.me/03152280754">Contact Me</a> .
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="myskills" id="whyme">
+        <div class="container">
+          <div class="headingskill" data-sr="wait 0.2s enter">
+            professional Skill
+          </div>
+          <div class="skills">
+            <div class="skill">
+              <div class="skill-title">Web Development</div>
+              <div class="skillbarfull">
+                <div class="skill-bar" data-bar="80">
+                  <p class="percentagebar">80%</p>
+                </div>
+                <span class="dataspan"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Web Design</div>
+              <div class="skillbarfull">
+                <div class="skill-bar" data-bar="65">
+                  <p class="percentagebar">65%</p>
+                </div>
+                <span class="dataspan"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Daraz Assistant</div>
+              <div class="skillbarfull">
+                <div class="skill-bar" data-bar="68">
+                  <p class="percentagebar">68%</p>
+                </div>
+                <span class="dataspan"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Graphic Design</div>
+              <div class="skillbarfull">
+                <div class="skill-bar" data-bar="70">
+                  <p class="percentagebar">70%</p>
+                </div>
+                <span class="dataspan"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="headingskill">Codeing Skill</div>
+          <div class="skills">
+            <div class="skill">
+              <div class="skill-title">HTML</div>
+              <div class="skillbarfull">
+                <div class="skill-bar" data-bar="80">
+                  <p class="percentagebar">85%</p>
+                </div>
+                <span class="dataspan"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">CSS</div>
+              <div class="skillbarfull">
+                <div class="skill-bar" data-bar="70">
+                  <p class="percentagebar">70%</p>
+                </div>
+                <span class="dataspan"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Tailwind Css</div>
+              <div class="skillbarfull">
+                <div class="skill-bar" data-bar="64">
+                  <p class="percentagebar">64%</p>
+                </div>
+                <span class="dataspan"></span>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">JavaScript</div>
+              <div class="skillbarfull">
+                <div class="skill-bar" data-bar="60">
+                  <p class="percentagebar">60%</p>
+                </div>
+                <span class="dataspan"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="educationpage">
+        <div class="education">
+          <h1>Education</h1>
+          <div class="education-item" id="middle-school">
+            <i class="bx bxs-school"></i>
+            <div>
+              <h3>Middle School</h3>
+              <p>Fg Junior Boys - 2014-2018</p>
+            </div>
+          </div>
+          <div class="education-item" id="secondary-school">
+            <i class="bx bxs-graduation"></i>
+            <div>
+              <h3>Secondary School</h3>
+              <p>Fg Public School - 2018 - 2023</p>
+            </div>
+          </div>
+          <div class="education-item" id="intermediate">
+            <i class="bx bxl-unity"></i>
+            <div>
+              <h3>Intermediate</h3>
+              <p>Fg Boys Inter College - 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="conatctpage">
+        <section class="ftco-section">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-md-12">
+                <div class="wrapper">
+                  <div class="row no-gutters">
+                    <div class="col-md-7 d-flex align-items-stretch">
+                      <div class="contact-wrap w-100 p-md-5 p-4">
+                        <h3 class="mb-4 getintouchs">Get in touch</h3>
+                        <div id="form-message-warning" class="mb-4"></div>
+
+                        <form method="POST" id="contactForm" name="contactForm">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  name="name"
+                                  id="name"
+                                  placeholder="Name"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  name="email"
+                                  id="email"
+                                  placeholder="Email"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  name="subject"
+                                  id="subject"
+                                  placeholder="Subject"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <textarea
+                                  name="message"
+                                  class="form-control"
+                                  id="message"
+                                  cols="30"
+                                  rows="7"
+                                  placeholder="Message"
+                                ></textarea>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  type="submit"
+                                  value="Send Message"
+                                  class="btn btn-primary"
+                                />
+                                <div class="submitting"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-md-5 d-flex align-items-stretch">
+                      <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+                        <h3 class="mb-4 mt-md-4">Contact us</h3>
+                        <div class="dbox w-100 d-flex align-items-start">
+                          <div
+                            class="icon d-flex align-items-center justify-content-center"
+                          >
+                            <span class="fa fa-map-marker"></span>
+                          </div>
+                          <div class="text pl-3">
+                            <p>
+                              <span>Address:</span> 198 West 21th Street, Suite
+                              721 New York NY 10016
+                            </p>
+                          </div>
+                        </div>
+                        <div class="dbox w-100 d-flex align-items-center">
+                          <div
+                            class="icon d-flex align-items-center justify-content-center"
+                          >
+                            <span class="fa fa-phone"></span>
+                          </div>
+                          <div class="text pl-3">
+                            <p>
+                              <span>Phone:</span>
+                              <a href="tel://1234567920">+ 1235 2355 98</a>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="dbox w-100 d-flex align-items-center">
+                          <div
+                            class="icon d-flex align-items-center justify-content-center"
+                          >
+                            <span class="fa fa-paper-plane"></span>
+                          </div>
+                          <div class="text pl-3">
+                            <p>
+                              <span>Email:</span>
+                              <a href="mailto:info@yoursite.com"
+                                >info@yoursite.com</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                        <div class="dbox w-100 d-flex align-items-center">
+                          <div
+                            class="icon d-flex align-items-center justify-content-center"
+                          >
+                            <span class="fa fa-globe"></span>
+                          </div>
+                          <div class="text pl-3">
+                            <p>
+                              <span>Website</span> <a href="#">yoursite.com</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="footerpage">
+        <div class="footer">
+          <p>© 2023 Mansoor. All rights reserved.</p>
+          <p>Made with <span class="heart">❤️</span> by Mansoor</p>
+          <p>
+            <a href="https://www.instagram.com/wassup_mansoor/" target="_blank"
+              ><i id="instaicon2" class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/iammansoor007/" target="_blank"
+              ><i id="facebookicon2" class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://wa.me/03152280754" target="_blank"
+              ><i id="whatsappicon2" class="bx bxl-whatsapp"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
